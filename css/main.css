@@ -466,6 +466,9 @@ footer .social-icons a:hover {
     grid-template-columns: 55% 45%;
     align-content: center;
   }
+  .banner .banner-contenido {
+    text-align: center;
+  }
   .producto-lista {
     grid-template-columns: repeat(3, 1fr);
   }
