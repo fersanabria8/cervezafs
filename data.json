@@ -1,0 +1,74 @@
+[
+  {
+    "nombre": "Honey",
+    "precio": 190,
+    "tag": "honey1",
+    "img": "img/honey1.webp"
+  },
+  {
+    "nombre": "Honey",
+    "precio": 190,
+    "tag": "honey1",
+    "img": "img/honey2.webp"
+  },
+  {
+    "nombre": "Blonde",
+    "precio": 190,
+    "tag": "blonde1",
+    "img":"img/blonde1.webp"
+  },
+  {
+    "nombre": "Blonde",
+    "precio": 190,
+    "tag": "blonde1",
+    "img":"img/blonde1.webp"
+  },
+  {
+    "nombre": "Blonde",
+    "precio": 190,
+    "tag": "blonde1",
+    "img":"img/blonde1.webp"
+  },
+  {
+    "nombre": "Blonde",
+    "precio": 190,
+    "tag": "blonde1",
+    "img":"img/blonde1.webp"
+  },
+  {
+    "nombre": "Ipa",
+    "precio": 230,
+    "tag": "ipa1",
+    "img":"img/ipa1.webp"
+  },
+  {
+    "nombre": "Ipa",
+    "precio": 230,
+    "tag": "ipa1",
+    "img":"img/ipa1.webp"
+  },
+  {
+    "nombre": "Red",
+    "precio": 214,
+    "tag": "red1",
+    "img":"img/red1.webp"
+  },
+  {
+    "nombre": "Red",
+    "precio": 214,
+    "tag": "red1",
+    "img":"img/red1.webp"
+  },
+  {
+    "nombre": "Stout",
+    "precio": 215,
+    "tag": "stout1",
+    "img":"img/stout1.webp"
+  },
+  {
+    "nombre": "Stout",
+    "precio": 215,
+    "tag": "stout1",
+    "img":"img/stout1.webp"
+  }
+]

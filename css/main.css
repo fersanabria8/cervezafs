@@ -1,0 +1,499 @@
+@import url("https://fonts.googleapis.com/css2?family=Kulim+Park:wght@600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Kulim Park';
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  outline: 0;
+}
+
+a {
+  color: #000;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.text {
+  font-size: 18px;
+  margin: 20px 0;
+  line-height: 1.7;
+  opacity: 0.7;
+}
+
+header {
+  background-color: greenyellow;
+}
+
+header .container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header .navbar {
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 24px 16px !important;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 24px 0;
+  background-color: coral;
+  z-index: 999;
+}
+
+header .navbar .navbar-brand {
+  font-size: 24px;
+  font-weight: 600;
+  color: firebrick;
+  justify-self: flex-start;
+}
+
+header .navbar .navbar-toggler {
+  justify-self: center;
+  border: none;
+  color: #fff;
+  background-color: firebrick;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  position: relative;
+}
+
+header .navbar .navbar-collapse {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5 ease-in-out;
+}
+
+header .navbar .navbar-collapse li {
+  margin: 10px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+header .navbar .navbar-collapse a {
+  font-size: 18px;
+}
+
+header .navbar .show-navbar {
+  height: 200px;
+}
+
+header .navbar .cart {
+  justify-self: flex-end;
+  padding-right: 8px;
+}
+
+header .navbar .cart #cart-btn {
+  border: none;
+  font-size: 24px;
+  background: none;
+  color: gray;
+  position: relative;
+}
+
+header .navbar .cart #cart-count-info {
+  position: absolute;
+  top: -12px;
+  right: -8px;
+  background: firebrick;
+  color: #fff;
+  font-size: 16px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+header .navbar .cart-container {
+  position: absolute;
+  overflow-y: scroll;
+  background: #fff;
+  height: 600px;
+  top: 100%;
+  left: 0;
+  right: 0;
+  box-shadow: 0 3px 8px -2px rgba(0, 0, 0, 0.21);
+  display: none;
+}
+
+header .navbar .cart-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+header .navbar .cart-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+header .navbar .show-cart-container {
+  display: block;
+}
+
+header .navbar .cart-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 8px;
+  align-items: center;
+  position: relative;
+  padding: 20px 10px;
+  height: 140px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.21);
+}
+
+header .navbar .cart-item img {
+  width: 65px;
+}
+
+header .navbar .cart-item:last-child {
+  border-bottom: none;
+}
+
+header .navbar .cart-item-del-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  padding: 5px 5px;
+  font-size: 22px;
+  background: firebrick;
+  border-radius: 5px;
+}
+
+header .navbar .cart-item-info {
+  text-align: center;
+}
+
+header .navbar .cart-item-info span {
+  display: block;
+}
+
+header .navbar .cart-total {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: firebrick;
+  color: #fff;
+}
+
+header .navbar .cart-total h3 {
+  margin-right: 4px;
+}
+
+header .navbar #cart-total-value {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+header .banner {
+  flex: 1;
+  padding-top: 100px;
+  text-align: center;
+}
+
+header .banner-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+header .banner-img img {
+  width: 200px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+header .banner > div {
+  margin: 48px 0;
+}
+
+header .banner .text {
+  font-size: 18px;
+  opacity: 0.45;
+}
+
+header .btns {
+  margin: 24px;
+}
+
+header .btn {
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 1px solid firebrick;
+  background: firebrick;
+  color: #fff;
+  padding: 15px;
+  letter-spacing: 2px;
+  display: block;
+  width: 180px;
+  margin: 10px auto;
+  transition: all 0.5 ease-in-out;
+}
+
+header .btns .btn:last-child {
+  color: firebrick;
+  background: transparent;
+}
+
+header .btns .btn:first-child:hover {
+  background: transparent;
+  color: firebrick;
+}
+
+header .btns .btn:last-child:hover {
+  background: firebrick;
+  color: #fff;
+}
+
+.productos {
+  padding: 100px 0;
+}
+
+.productos h2 {
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: gray;
+  margin-bottom: 48px;
+}
+
+.productos .producto-item {
+  margin: 16px 0;
+}
+
+.productos .producto-img {
+  background: green;
+  padding: 48px 0;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+.productos .producto-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  margin: 0 auto;
+}
+
+.productos .producto-img:hover img {
+  opacity: 0.8;
+}
+
+.productos .producto-contendio {
+  padding: 25px;
+  text-align: center;
+}
+
+.productos .add-carrito-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: firebrick;
+  color: #fff;
+  transition: all 0.5 ease-in-out;
+  opacity: 0;
+}
+
+.productos .producto-item:hover .add-carrito-btn {
+  opacity: 1;
+}
+
+.productos .add-carrito-btn .fas {
+  margin-right: 7px;
+}
+
+.productos .add-carrito-btn:hover {
+  background-color: #000;
+}
+
+.productos .add-carrito-btn:hover {
+  color: firebrick;
+}
+
+.productos .producto-categoria {
+  margin: 12px 0;
+  display: inline-block;
+  background-color: firebrick;
+  padding: 1px 24px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+
+.productos .prducto-precio {
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+footer {
+  background-color: black;
+}
+
+footer .footer-banner {
+  color: #fff;
+  text-align: center;
+}
+
+footer .footer-banner h2 {
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+footer .footer-banner .btn {
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 1px solid firebrick;
+  background: firebrick;
+  color: #fff;
+  padding: 15px;
+  letter-spacing: 2px;
+  display: block;
+  width: 180px;
+  margin: 30px auto;
+  transition: all 0.5 ease-in-out;
+}
+
+footer .footer-banner .btn:hover {
+  background: black;
+  color: firebrick;
+  background: transparent;
+}
+
+footer footer > .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .social-icons {
+  display: flex;
+  padding: 50px 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .social-icons a {
+  color: #fff;
+  margin: 0 8px;
+  background: firebrick;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  transition: all 0.5 ease-in-out;
+}
+
+footer .social-icons a:hover {
+  color: black;
+}
+
+@media screen and (min-width: 480px) {
+  .btns button {
+    display: inline-block;
+  }
+  .btns button:first-child {
+    margin-right: 7px;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .navbar {
+    padding: 24px 50px !important;
+  }
+  .navbar .cart-container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: 30px;
+  }
+  .producto-lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 24px 100px !important;
+  }
+  .navbar .cart-container {
+    margin-right: 40px;
+  }
+  .banner {
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-content: center;
+    background-color: red;
+  }
+  .banner .banner-contenido {
+    text-align: left;
+  }
+  .producto-lista {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-banner {
+    text-align: left;
+  }
+  .footer-banner .text {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar {
+    padding: 24px 220px !important;
+  }
+  .cart-container {
+    right: 220px;
+  }
+  .banner-contenido h1 {
+    font-size: 55px;
+  }
+  .producto-lista {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
