@@ -17,7 +17,7 @@
     .cart-container{
       width: 480px;
       margin-left: auto;
-      margin-right: 30px;
+      margin-right: 20px;
     }
   }
   .producto-lista{
@@ -33,7 +33,7 @@
     padding: 24px  100px!important;
 
     .cart-container{
-     margin-right: 40px;
+     margin-right: 20px;
 
     }
   }
@@ -43,10 +43,11 @@
     display: grid;
     grid-template-columns: 55% 45%;
     align-content: center;
-    background-color: red;
+    
 
     .banner-contenido{
-      text-align: left;
+      // text-align: left;
+
     }
   }
   .producto-lista{
@@ -54,11 +55,13 @@
   }
 
   .footer-banner{
-    text-align: left;
+    text-align: center;
+  
   }
 
   .footer-banner .text{
-    width: 60%;
+    width: 100%;
+   
   }
 }
 

@@ -11,6 +11,7 @@
 body {
   line-height: 1.5;
   font-weight: 400;
+  background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
 }
 
 img {
@@ -40,10 +41,6 @@ a {
   opacity: 0.7;
 }
 
-header {
-  background-color: greenyellow;
-}
-
 header .container {
   min-height: 100vh;
   display: flex;
@@ -61,7 +58,7 @@ header .navbar {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   padding: 24px 0;
-  background-color: coral;
+  background-color: #f5f5f7;
   z-index: 999;
 }
 
@@ -75,7 +72,7 @@ header .navbar .navbar-brand {
 header .navbar .navbar-toggler {
   justify-self: center;
   border: none;
-  color: #fff;
+  color: #f5f5f7;
   background-color: firebrick;
   border-radius: 50%;
   width: 40px;
@@ -141,7 +138,7 @@ header .navbar .cart #cart-count-info {
 header .navbar .cart-container {
   position: absolute;
   overflow-y: scroll;
-  background: #fff;
+  background: #f5f5f7;
   height: 600px;
   top: 100%;
   left: 0;
@@ -258,7 +255,7 @@ header .btn {
   padding: 15px;
   letter-spacing: 2px;
   display: block;
-  width: 180px;
+  width: 210px;
   margin: 10px auto;
   transition: all 0.5 ease-in-out;
 }
@@ -296,7 +293,8 @@ header .btns .btn:last-child:hover {
 }
 
 .productos .producto-img {
-  background: green;
+  background: #f5f5f7;
+  border-radius: 5px;
   padding: 48px 0;
   height: 350px;
   overflow: hidden;
@@ -446,7 +444,7 @@ footer .social-icons a:hover {
   .navbar .cart-container {
     width: 480px;
     margin-left: auto;
-    margin-right: 30px;
+    margin-right: 20px;
   }
   .producto-lista {
     display: grid;
@@ -460,26 +458,22 @@ footer .social-icons a:hover {
     padding: 24px 100px !important;
   }
   .navbar .cart-container {
-    margin-right: 40px;
+    margin-right: 20px;
   }
   .banner {
     padding-top: 0;
     display: grid;
     grid-template-columns: 55% 45%;
     align-content: center;
-    background-color: red;
-  }
-  .banner .banner-contenido {
-    text-align: left;
   }
   .producto-lista {
     grid-template-columns: repeat(3, 1fr);
   }
   .footer-banner {
-    text-align: left;
+    text-align: center;
   }
   .footer-banner .text {
-    width: 60%;
+    width: 100%;
   }
 }
 
