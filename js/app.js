@@ -41,7 +41,7 @@ function subirCarrito(){
 
 //CARGANDO PRODUCTO ITEM CONTENIDO DE ARCHIVO JSON
 function loadJSON(){
-  fetch('data.json')
+  fetch('https://my-json-server.typicode.com/fersanabria8/cervezafsAPI/product')
   .then(response => response.json())
   .then(data =>{
     let html = '';
