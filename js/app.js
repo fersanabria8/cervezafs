@@ -37,8 +37,6 @@ function subirCarrito(){
   cartTotalValue.textContent = cartInfo.total;
 }
 
-
-
 //CARGANDO PRODUCTO ITEM CONTENIDO DE ARCHIVO JSON
 function loadJSON(){
   fetch('https://my-json-server.typicode.com/fersanabria8/cervezafsAPI/product')
